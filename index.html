@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Cercador d'unitats Dir3Caib</title>
+
+        <link href="css/dir3caibfront.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+    
+        <header class="bg-verd">
+			<div class="container">
+            <div id="logo">
+                <img src="img/govern-logo.png" width="70" height="70" alt="Govern de les Illes Balears">
+            </div>
+            <div id="aplication-logo">
+                <img src="img/logoDir.png" width="159" alt="Directorio Com�n">
+            </div>      
+			</div>
+        </header>
+        
+        <section class="imc-logo">
+            <div><a href="https://www.caib.es" class="imc--goib" title="Govern de les Illes Balears" target="_blank" tabindex="2" aria-label="Govern de les Illes Balears" aria-describedby="entitatLogo"><img src="img/goib_front_lateral.png" style="max-width: 70%;" title="" alt="Govern de les Illes Balears" class="logo-govern"><span id="entitatLogo">Govern de les Illes Balears</span></a></div><div></div>
+        </section>
+
+        <section class="formulariCerca">
+        
+        <h3>Cercador d'unitats orgániques</h3>
+        
+        <p>El DIR3 és un catàleg de les unitats orgàniques, organismes públics i oficines de registre i atenció a la ciutadania de les administracions. És un inventari unificat i comú per a tota l'Administració amb la finalitat que les administracions puguin operar entre si i així permetre l'accés electrònic dels ciutadans als serveis públics.</p>
+
+		<!-- p>L'article 66 de la Llei 39/2015, d'1 d'octubre, del procediment administratiu comú de les administracions publiques, estableix que les sol·licituds que es formulin han de contenir l'òrgan, centre o unitat administrativa al qual s'adrecen i el codi d'identificació corresponent. També estableix que les oficines d'assistència en matèria de registres estan obligades a facilitar als interessats el codi d'identificació si els interessats el desconeixen. Així mateix, les administracions públiques han de mantenir i actualitzar a la seu electrònica corresponent una llista amb els codis d'identificació vigents.</p -->
+		
+		<form>
+			<div class="row" id="nivelAdministracionDiv">
+				<label for="codigoNivelAdministracion">Nivell d'administració:</label>
+				<select id="codigoNivelAdministracion" name="codigoNivelAdministracion">
+					<option value="-1">Tots</option>
+					<option value="1">Administración del Estado</option>
+					<option value="2" selected="selected">Administración Autonómica</option>
+					<option value="3">Administración Local</option>
+					<option value="4">Universidades</option>
+					<option value="5">Otras Instituciones</option>
+					<option value="6">Administración de Justicia</option>
+				</select>
+			</div>
+     	
+			<div class="row" id="comunidadAutonomaDiv">
+				<label for="codigoComunidad">Comunitat Autònoma:</label>
+                <select id="codigoComunidad" name="codigoComunidad">
+					<option value="-1">Totes</option>
+                    <option value="1">Andalucía</option>
+					<option value="2">Aragón</option>
+					<option value="5">Canarias</option>
+					<option value="6">Cantabria</option>
+					<option value="7">Castilla y León</option>
+					<option value="8">Castilla-La Mancha</option>
+					<option value="9">Cataluña</option>
+					<option value="18">Ciudad Autónoma de Ceuta</option>
+					<option value="19">Ciudad Autónoma de Melilla</option>
+					<option value="13">Comunidad de Madrid</option>
+					<option value="15">Comunidad Foral de Navarra</option>
+					<option value="10">Comunitat Valenciana</option>
+					<option value="11">Extremadura</option>
+					<option value="12">Galicia</option>
+					<option value="4" selected="selected">Illes Balears</option>
+					<option value="17">La Rioja</option>
+					<option value="16">País Vasco</option>
+					<option value="3">Principado de Asturias</option>
+					<option value="14">Región de Murcia</option>
+                </select>
+			</div>
+							
+			<div class="row" id="denominacionDiv">
+                <label for="denominacion">Denominació o codi DIR3:</label>
+				<input id="denominacion" name="denominacion" type="text" value="" style="z-index: 2; background: transparent;" autocomplete="off"/> 
+            </div>
+
+			<div id="resultados">
+			
+				<div id="resultat1" class="card">
+					
+					<p class="cooficial">Nom de la entitat cooficial</p>
+					<p class="oficial">Nombre de la entidad</p>
+					
+					<span class="codigodir3">A123456789</span>
+					
+					<div class="columnes">
+						<div class="direccio">
+							<p class="titol">Direcció</p>
+							<ul>
+								<li>Carretera de Valldemossa, km 7,4</li>
+								<li>C\Laura Bassi. Parc Bit</li>
+								<li>07121 - Palma</li>
+								<li>Illes Balears<li>
+								<li>España</li>
+							</ul>
+						</div>
+						<div class="contactes">
+							<p class="titol">Contactes</p>
+							<ul>
+								<li><span class="tag">Telefon</span>: 971177700</li>
+								<li><span class="tag">Correu</span>: email@email.com</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div style="clear:both;"></div>
+					
+					<div class="superior">
+						<span class="titol">Unitat Superior</span>
+						<span class="codi">A04032314</span> - <span class="tag">Conselleria d'Interior i de Modernització</span>
+					</div>
+					
+					<div class="arrel">
+						<span class="titol">Unitat Arrel</span>
+						<span class="codi">A04019281</span> - <span class="tag">Govern de les Illes Balears</span>
+					</div>
+					
+					<ul class="basic">
+						<li><span class="tag">EDP</span>: No</li>
+						<li><span class="tag">Nif / CIF</span>: G57775884</li>
+						<li><span class="tag">Nivell jeràrquic</span>: 3</li>
+						<li><span class="tag">Nivell administració</span>: Administració autonòmica</li>
+					</ul>
+				
+				</div>
+			
+			
+			
+			</div>
+		</form>
+        
+        </section>
+        
+        
+        <footer class="imc-peu">
+			<div class="imc--contingut">
+				<div class="imc-peu-govern" tabindex="600">
+					<div>
+						<span style="font-weight: bold; text-transform: uppercase;display: block;">© Govern de les Illes Balears</span>
+						<span style="display:block;">C/ de Sant Pere, 7 - 07012 Palma</span>
+						
+					</div>
+				</div>
+				
+				<div class="imc-peu-opcions">	
+					<ul class="enllasosPeu">
+						<li id="enllasAvisLegal">
+							<a tabindex="622" aria-labelledby="enllasAvisLegal" href="#/avislegal"> Avís legal <img src="img/legal.png" class="ml-0" title="AVÍS LEGAL" alt="AVÍS LEGAL"></a>
+						</li>
+						<li id="enllasAccesibilitat">
+							<a tabindex="622" aria-labelledby="enllasAvisLegal" href="#/avislegal"> Accesibilitat <img src="img/legal.png" class="ml-0" title="AVÍS LEGAL" alt="AVÍS LEGAL"></a>
+						</li>
+						<li id="enllasPeu0">
+							<a href="http://www.caib.es/govern/rss.do?lang=ca" target="_blank" tabindex="631" aria-labelledby="enllasPeu0"><span>RSS</span><img src="img/rss.png" title="" alt="RSS"></a>
+						</li>
+					</ul>
+				</div>
+					
+				<div class="imc-peu-xarxes"><div><p>Segueix-nos:</p>
+					<ul class="dretaXarxes">
+						<li id="enllasXarxa0" class="espaiXarxa">
+							<a href="http://www.youtube.com/CanalIllesBalears" class="imc-bt-xarxa border-0" title="YouTube" target="_blank" tabindex="651" aria-labelledby="enllasXarxa0">
+								<img src="img/youtube.png" title="Icona de YouTube" alt="YouTube" class="wXarxa" />
+							</a>
+						</li>
+						<li id="enllasXarxa1" class="espaiXarxa">
+							<a href="https://www.facebook.com/GovernIllesBalears/" class="imc-bt-xarxa border-0" title="Facebook" target="_blank" tabindex="652" aria-labelledby="enllasXarxa1">
+								<img src="img/facebook.png" title="Icona de Facebook" alt="Facebook" class="wXarxa" />
+							</a>
+						</li>
+						<li id="enllasXarxa2" class="espaiXarxa">
+							<a href="https://www.instagram.com/goib" class="imc-bt-xarxa border-0" title="Instagram" target="_blank" tabindex="653" aria-labelledby="enllasXarxa2">
+								<img src="img/instagram.png" title="Icona de Instagram" alt="Instagram" class="wXarxa">
+							</a>
+						</li>
+						<li id="enllasXarxa3" class="espaiXarxa">
+							<a href="http://www.twitter.com/goib" class="imc-bt-xarxa border-0" title="Twitter" target="_blank" tabindex="654" aria-labelledby="enllasXarxa3">
+								<img src="img/twitter.png" title="Icona de Twitter" alt="Twitter" class="wXarxa">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+    
+    <script type="text/javascript" src="js/jquery-3-7-1-min.js"></script>
+    <script type="text/javascript" src="js/jquery-autocomplete.js"></script>
+    <script type="text/javascript" src="data/u_2_4.js"></script>
+    <script type="module">
+    
+    /*      
+    var nhl = $.map(nhlTeams, function (team) { return { value: team, data: { category: 'NHL' }}; });
+    var nba = $.map(nbaTeams, function (team) { return { value: team, data: { category: 'NBA' } }; });
+    var teams = nhl.concat(nba);
+
+    document.getElementById("loadButton").onclick = function () {
+      requireAjax("remote.js", function () {
+        sayHello("Mohammad");
+      });
+    };
+    
+    */   
+             
+        $(function () {
+            'use strict';
+            
+            let codigoComunidad; 
+            let nivelAdministracion;
+
+            let unidades = $.map(unitats, function (value, key) { return { value: value.denominacion + " - " + value.codigo, 
+            data: { comunidad: value.comunidadAutonoma, cooficial: value.denominacionCooficial, dir3: value.codigo} }; });  
+
+            $('#codigoComunidad').on('change', function(){
+                codigoComunidad = this.value;
+				console.log("codigoComunidad change to " + codigoComunidad);
+            });
+            
+            $('#codigoNivelAdministracion').on('change', function(){
+                nivelAdministracion = this.value;
+				console.log("nivelAdministracion change to " + nivelAdministracion);
+            });
+            
+            
+            $('#denominacion').on('focus', function(){           
+                if (codigoComunidad != 'undefined' && nivelAdministracion != 'undefined'){
+                    let nombreFichero = "data/unitats_" + nivelAdministracion + "_" + codigoComunidad + ".js";
+                    console.log(nombreFichero);
+                    // requireAjax(nombreFichero);
+                    // $.getScript(nombreFichero, function( data, textStatus, jqxhr ) { console.log( "Load was performed." ); })
+                }
+            });
+            
+            $('#denominacion').devbridgeAutocomplete({
+                lookup: unidades,
+                formatResult: function (suggestion, currentValue) {
+                    console.log("suggestion => ", suggestion);
+                    return "<p>"+suggestion.value+"<br><em>"+suggestion.data.cooficial+"</em></p>"; 
+                },
+                minChars: 1,
+                onSelect: function (suggestion) {
+                    $('#selection').html('You selected: ' + suggestion.value);
+					$('.card').css('display','block');
+                    console.log("Selecció: " + suggestion.value + " - " + suggestion.data.dir3);
+                },
+                showNoSuggestionNotice: true,
+                noSuggestionNotice: 'No hi ha coincidències',
+                groupBy: 'comunidad',
+                maxHeight: 500
+            });
+        });
+    </script>
+
+    </body>
+</html>
